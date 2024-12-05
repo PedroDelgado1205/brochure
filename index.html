@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BROCHURE</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/ico/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">VI ANIVERSARIO NEWBEST</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">BIENVENIDA</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">ITINERARIO</a></li>
+                    <li><a href="#expositores" onclick="seleccionar()">EXPOSITORES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpeg" alt="">
+            </div>
+            <h1>NewBest</h1>
+            <h2>La innvación en tus manos.</h2>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Bienvenida</h2>
+            <p>
+                Estimados Distribuidores, mediante el presente damos una cordial bienvenida a nuestro VI ANIVERSARIO de NEWBEST, para ello hemos preparado una agenda de actividades en retribución a todo el esfuerzo que ustedes han puesto para posicionar su marca y por supuesto la nuestra.
+                En ese sentido queremos celebrar con ustedes y agradecerles su compromiso y trabajo de estos primeros meses como Distribuidores de Firmas Electrónicas.  
+                A continuación adjunto el orden del día a fin organizarnos y avanzar con nuestro itinerario puntualmente.
+                BIENVENIDOS/AS
+            </p>
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-intereses">
+                        <a class="redes" href="https://www.facebook.com/CorpNewBest/" target="_blank">
+                            <div class="interes">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>FACEBOOK</span>
+                            </div>
+                        </a>
+                        <a class="redes" href="https://wa.me/0984361780" target="_blank">
+                            <div class="interes">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>WHATSAPP</span>
+                            </div>
+                        </a>
+                        <a class="redes" href="mailto:info@newbest.net" target="_blank">
+                            <div class="interes">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>MAIL</span>
+                            </div>
+                        </a>
+                        <a class="redes" href="https://www.newbest.net/#/inicio" target="_blank">
+                            <div class="interes">
+                                <i class="fa-solid fa-globe"></i>
+                                <span>WEB</span>
+                            </div>
+                        </a>
+                        <a class="redes" href="https://www.instagram.com/newbest.net_ec/" target="_blank">
+                            <div class="interes">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>WEB</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>ITINERARIO VIERNES 06</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <span class="fecha">14H00</span>
+                        <p>Traslado desde la provincia de origen en bus interprovincial</p>
+                        <p>(Espress Sucre, Microbuses Alianza Ruta Cuenca - Guaayaquil)</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item izq">
+                        <span class="fecha">19H00</span>
+                        <p>Noche cuencana de Bienvenida</p>
+                        <p>(visita en el bus turistico y cena tradicional cuencana)</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <div class="espacio">
+                    </div>
+                    <br>
+                    <div class="item der">
+                        <span class="fecha">15H00 a 18H00</span>
+                        <p>Registro en el Hotel Carvallo</p>
+                        <div class="btn">
+                            <a href="https://www.facebook.com/hotelboutique.carvallo/" target="_blank">info</a>
+                        </div>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item der">
+                        <span class="fecha">20:00</span>
+                        <p><b>CENA</b></p>
+                        <button style="margin-top: 5px;" onclick="openModal('m1')">menu</button>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <h2>ITINERARIO SABADO 07</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <span class="fecha">7:30 - 8:00</span>
+                        <p>Desayuno en en el hospedaje</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item izq">
+                        <span class="fecha">9:00 - 9:15</span>
+                        <p><b>BIENVENIDA</b></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item izq">
+                        <span class="fecha">10:40 - 11:00</span>
+                        <p><b>COFFE BREAK</b></p>
+                        <button style="margin-top: 5px;" onclick="openModal('m2')">menu</button>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item izq">
+                        <span class="fecha">13:00 - 14:00</span>
+                        <p><b>ALMUERZO</b></p>
+                        <button style="margin-top: 5px;" onclick="openModal('m3')">menu</button>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item izq">
+                        <span class="fecha">16:00</span>
+                        <p>Ronda de Negocios, conozca a los distribuidores de otras provincias y sus estrategias de venta. Así como a proveedores de sistemas de facturación, manejo de redes sociales y marketing.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="item izq">
+                        <span class="fecha">18:00</span>
+                        <p>Clausura</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3></h3>
+                    <div class="item der">
+                        <span class="fecha">8:30</span>
+                        <p>Registro Rooftop (Edificio FORUM 7MO PISO)</p>
+                        <div class="btn">
+                            <a href="https://www.google.com/maps/place/Edificio+Forum+centro+empresarial/@-2.9079568,-79.0045037,17z/data=!3m1!4b1!4m6!3m5!1s0x91cd190233744427:0xf4487e1bc8d5ae38!8m2!3d-2.9079568!4d-79.0019288!16s%2Fg%2F11hf03_ycp?entry=ttu&g_ep=EgoyMDI0MTIwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">info</a>
+                        </div>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="fecha">9:15 - 10:40</span>
+                        <p><b>Charla 1:</b> Firma electrónica presente y futuro de la integridad digital.</p>
+                        <p><b>Charla 2:</b> Como armar mi red de distribución.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="fecha">11:00 - 13:00</span>
+                        <p><b>Charla 3:</b> Manejo de redes sociales y ventas por Whatsapp.</p>
+                        <p><b>Charla 4:</b> Educación Financiera, estructuras de costos de servicios tecnológicos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="fecha">14:00 - 16:00</span>
+                        <p><b>Charla 5:</b> Inteligencia Artificial, como verificamos la identidad de las personas.</p>
+                        <p><b>Charla 6:</b> Potenciales negocios con NEWBEST.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="fecha">17:00</span>
+                        <p>Coctel de Premiación (Globo de Oro, Plata y Bronce) a los mejores distribuidores 2024. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION EXPOSITORES -->
+    <section id="expositores" >
+        <h3>Expositores</h3>
+        <div class="expositores">
+            <div class="contenido-expositor">
+                <div class="contenedor-img">
+                    <img src="img/heros/hero1.jpeg" alt="" onerror="this.src='img/hero.jpeg'">
+                </div>
+                <h1>PAOLA MANCHENO MOSCOSO</h1>
+                <div class="btnExpositor">
+                    <button onclick="openModal(1)">mas info</button>
+                </div>
+            </div>
+            <div class="contenido-expositor">
+                <div class="contenedor-img">
+                    <img src="img/heros/hero2.jpeg" alt="" onerror="this.src='img/hero.jpeg'">
+                </div>
+                <h1>DANIELA VÁSQUEZ DURÁN</h1>
+                <div class="btnExpositor">
+                    <button onclick="openModal(2)">mas info</button>
+                </div>
+            </div>
+            <div class="contenido-expositor">
+                <div class="contenedor-img">
+                    <img src="img/heros/hero3.jpeg" alt="" onerror="this.src='img/hero.jpeg'">
+                </div>
+                <h1>PETRONIO ENCALADA TORRES</h1>
+                <div class="btnExpositor">
+                    <button onclick="openModal(3)">mas info</button>
+                </div>
+            </div>
+            <div class="contenido-expositor">
+                <div class="contenedor-img">
+                    <img src="img/heros/hero4.jpeg" alt="" onerror="this.src='img/hero.jpeg'">
+                </div>
+                <h1>MARÍA CARIDAD BARRERA</h1>
+                <div class="btnExpositor">   
+                    <button onclick="openModal(4)">mas info</button>
+                </div>
+            </div>
+            <div class="contenido-expositor">
+                <div class="contenedor-img">
+                    <img src="img/heros/hero5.jpeg" alt="" onerror="this.src='img/hero.jpeg'">
+                </div>
+                <h1>PEDRO REYES BERNAL</h1>
+                <div class="btnExpositor">
+                    <button onclick="openModal(5)">mas info</button>
+                </div>
+            </div>
+            <div class="contenido-expositor">
+                <div class="contenedor-img">
+                    <img src="img/heros/hero6.jpeg" alt="" onerror="this.src='img/hero.jpeg'">
+                </div>
+                <h1>MAURICIO RANKOVICH</h1>
+                <div class="btnExpositor">
+                    <button onclick="openModal(6)">mas info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO/EXTRAS</h2>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/ubicacion.png" height="" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Dirección: Cornelio Merchan 391, Cuenca 010107, Edificio FORUM
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 0984361780
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: info@newbest.net
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/hero.jpeg" height="77%" alt="">
+                    <div class="info btns">
+                        <div class="btn">
+                            <a href="https://tranvia.cuenca.gob.ec/mL/#/home">Tranvia</a>
+                        </div>
+                        <div class="btn">
+                            <a href="https://www.turismo.gob.ec/20-lugares-de-cuenca-para-conocerla-mejor/">Que Hacer?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/CorpNewBest/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a class="redes" href="https://wa.me/0984361780" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:info@newbest.net" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a class="redes" href="https://www.newbest.net/#/inicio" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a class="redes" href="https://www.instagram.com/newbest.net_ec/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <div id="ventanaModal" class="modal">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
